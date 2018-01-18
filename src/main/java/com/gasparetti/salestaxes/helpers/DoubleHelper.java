@@ -22,7 +22,10 @@ public class DoubleHelper {
 		DecimalFormat df = (DecimalFormat) NumberFormat.getCurrencyInstance(Locale.ENGLISH);
 		try {
 			df.applyPattern("#,##0.00");
-		} catch(NullPointerException | IllegalArgumentException e) {
+		} catch(NullPointerException e) {
+			e.printStackTrace();
+			throw new IOStringException("Incorrect money value");
+		} catch(IllegalArgumentException e) {
 			e.printStackTrace();
 			throw new IOStringException("Incorrect money value");
 		}

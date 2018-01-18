@@ -64,7 +64,22 @@ public class ReadFileManager {
 				}
 			}
 
-		} catch (FileNotFoundException | IllegalStateException | NoSuchElementException | NullPointerException e) {
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+			throw new WordsFileException(e.getMessage());
+			
+		} catch (IllegalStateException e) {
+			
+			e.printStackTrace();
+			throw new WordsFileException(e.getMessage());
+			
+		} catch (NoSuchElementException e) {
+			
+			e.printStackTrace();
+			throw new WordsFileException(e.getMessage());
+			
+		} catch (NullPointerException e) {
 			
 			e.printStackTrace();
 			throw new WordsFileException(e.getMessage());
