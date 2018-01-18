@@ -1,0 +1,17 @@
+com/gasparetti/salestaxes/entities/Product.class
+com/gasparetti/salestaxes/enumerations/CategoryEnum.class
+com/gasparetti/salestaxes/services/BillServiceImpl.class
+com/gasparetti/salestaxes/services/IOStringService.class
+com/gasparetti/salestaxes/services/BillService.class
+com/gasparetti/salestaxes/services/Service.class
+com/gasparetti/salestaxes/exceptions/WordsFileException.class
+com/gasparetti/salestaxes/App.class
+com/gasparetti/salestaxes/helpers/DoubleHelper.class
+com/gasparetti/salestaxes/helpers/file/FileConstants.class
+com/gasparetti/salestaxes/helpers/file/ReadFileManager.class
+com/gasparetti/salestaxes/services/TaxService.class
+com/gasparetti/salestaxes/exceptions/IOStringException.class
+com/gasparetti/salestaxes/services/IOStringServiceImpl.class
+com/gasparetti/salestaxes/helpers/StringHelper.class
+com/gasparetti/salestaxes/services/TaxServiceImpl.class
+com/gasparetti/salestaxes/entities/Bill.class
