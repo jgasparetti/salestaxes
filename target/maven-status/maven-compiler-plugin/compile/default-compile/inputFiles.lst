@@ -1,0 +1,17 @@
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/helpers/file/FileConstants.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/helpers/file/ReadFileManager.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/services/IOStringServiceImpl.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/services/BillServiceImpl.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/entities/Product.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/helpers/DoubleHelper.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/services/IOStringService.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/services/TaxServiceImpl.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/services/BillService.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/exceptions/IOStringException.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/App.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/enumerations/CategoryEnum.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/services/Service.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/entities/Bill.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/exceptions/WordsFileException.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/helpers/StringHelper.java
+/Users/jacopo/eclipse-workspace/salestaxes/src/main/java/com/gasparetti/salestaxes/services/TaxService.java
