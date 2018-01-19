@@ -1,11 +1,11 @@
 package com.gasparetti.salestaxes.helpers.file;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
 
 import org.atteo.evo.inflector.English;
 
@@ -34,18 +34,17 @@ public class ReadFileManager {
 	public List<String> getWords(String fileName, boolean withPlural) throws WordsFileException {
 		
 		List<String> returnValue = new ArrayList<String>();
-
-		Scanner scanner = null;
+		
+		InputStream inputStream = classLoader.getResourceAsStream(fileName);
+		
+		BufferedReader br = null;
 		
 		try {
+		        
+			br = new BufferedReader(new InputStreamReader(inputStream));
 			
-			File file = new File(classLoader.getResource("resources/" + fileName).getFile());
-			
-			scanner = new Scanner(file);
-
-			while (scanner.hasNextLine()) {
-				
-				String stopword = scanner.nextLine();
+			String stopword = null;
+			while ((stopword = br.readLine()) != null) {
 				
 				if (stopword == null || stopword.isEmpty()) {
 					continue;
@@ -63,18 +62,8 @@ public class ReadFileManager {
 					}
 				}
 			}
-
-		} catch (FileNotFoundException e) {
-			
-			e.printStackTrace();
-			throw new WordsFileException(e.getMessage());
-			
-		} catch (IllegalStateException e) {
-			
-			e.printStackTrace();
-			throw new WordsFileException(e.getMessage());
-			
-		} catch (NoSuchElementException e) {
+	        
+		} catch (IOException e) {
 			
 			e.printStackTrace();
 			throw new WordsFileException(e.getMessage());
@@ -86,10 +75,10 @@ public class ReadFileManager {
 			
 		} finally {
 			
-			if (scanner != null) {
+			if (br != null) {
 				try {
-					scanner.close();
-				} catch (IllegalStateException e) {
+					br.close();
+				} catch (IOException e) {
 					e.printStackTrace();
 				}
 			}
